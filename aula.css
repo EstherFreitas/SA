@@ -1,0 +1,801 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body{
+    background: rgba(0, 0, 0, 0.24);
+  }
+  
+  /*HEADER*/
+  
+  header{
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 140px;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .logo{
+    padding-left: 10px;
+    height: 100px;
+    width: 230px;
+    margin-left: 30px;
+  }
+  
+  .cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .opcoes{
+    padding-left:40px ;
+    display: flex;
+    padding: 100px;
+    font-size: 40px;
+  }
+
+  .opcoes .fa{
+   font-size: 50px;
+   
+  }
+  
+  .opcoes-1{
+    padding: 30px;
+  }
+  
+  .opcoes a:hover{
+    background-image: linear-gradient(235deg, #006bff 0, #0062ff 12.5%, #6056ff 25%, #8849ff 37.5%, #a538ff 50%, #bc1ff1 62.5%, #cf00e3 75%, #df00d3 87.5%, #ec00c3 100%);
+    color: #fff;
+    border-radius: 70px;
+  }
+
+/**/
+
+.abas{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.dif_single{
+    border-radius: 70px;
+    margin-top:50px;
+    padding: 10px 30px;
+    margin-right: 50px;
+    margin-left: 10px;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dif_single a h2{  
+    align-items: center;
+    background-image: linear-gradient(235deg, #006bff 0, #0062ff 12.5%, #6056ff 25%, #8849ff 37.5%, #a538ff 50%, #bc1ff1 62.5%, #cf00e3 75%, #df00d3 87.5%, #ec00c3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.dif_single p {
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: gray;
+    font-size: 16px;
+}
+
+.aulas{
+    border-radius: 70px;
+    margin-top:50px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.aulas .title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: linear-gradient(235deg, #006bff 0, #0062ff 12.5%, #6056ff 25%, #8849ff 37.5%, #a538ff 50%, #bc1ff1 62.5%, #cf00e3 75%, #df00d3 87.5%, #ec00c3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 40px;
+}
+
+.aulas .conteudo{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+}
+
+.campo h2{
+    margin-top: 40px;
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.campo{
+    width: 700px;
+    text-align: justify;
+    margin-right: 100px;
+    color: gray;
+    font-weight: bold;
+}
+
+iframe {
+    
+    border-radius: 10px;
+    border: 1px solid #000
+}
+
+.button-prova{
+    background-image: linear-gradient(235deg, #006bff 0, #0062ff 12.5%, #6056ff 25%, #8849ff 37.5%, #a538ff 50%, #bc1ff1 62.5%, #cf00e3 75%, #df00d3 87.5%, #ec00c3 100%);
+    display: inline-block;
+    padding:6px 12px;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    height: 6vh;
+    width: 10vw;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 700px;
+    text-align: center;
+}
+
+.button-prova a{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*Responsivo*/
+
+@media screen and (max-width:1327px) {
+    .dif_single{
+     margin-left: 750px;
+     width: 30vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 110vw;
+     height: 60vh;
+    }
+ 
+    section.main{
+     height: 280vh;
+    }
+    header{
+     height: 40vh;
+     width: 173vh;
+    }
+ 
+     iframe{
+     margin-left: 300px;
+     margin-top: 900px;
+ 
+     }
+     .dif_singles{
+         margin-left: -180px;
+         margin-top: 700px;
+         width: 40vw;
+         height: 50vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 20vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+
+
+
+@media screen and (max-width:1027px) {
+    .dif_single{
+     margin-left: 770px;
+     width: 90vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 110vw;
+     height: 60vh;
+    }
+ 
+    section.main{
+     height: 320vh;
+    }
+    header{
+     height: 40vh;
+     width: 173vh;
+    }
+ 
+     iframe{
+     margin-left: 200px;
+     margin-top: 700px;
+ 
+     }
+     .dif_singles{
+         margin-left: -180px;
+         margin-top: 700px;
+         width: 40vw;
+         height: 50vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 20vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+
+
+@media screen and (max-width:915px) {
+    .dif_single{
+     margin-left: 620px;
+     width: 40vw;
+     height: 15vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 210vh;
+    }
+    header{
+     height: 25vh;
+     width: 67vh;
+    }
+ 
+     iframe{
+     margin-left: 90px;
+     margin-top: 900px;
+ 
+     }
+     .dif_singles{
+         margin-left: -270px;
+         margin-top: 700px;
+         width: 40vw;
+         height: 30vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+
+@media screen and (max-width:850px) {
+    .dif_single{
+     margin-left: 620px;
+     width: 40vw;
+     height: 15vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 210vh;
+    }
+    header{
+     height: 25vh;
+     width: 70vh;
+    }
+ 
+     iframe{
+     margin-left: 90px;
+     margin-top: 900px;
+ 
+     }
+     .dif_singles{
+         margin-left: -270px;
+         margin-top: 700px;
+         width: 40vw;
+         height: 30vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+ @media screen and (max-width:780px) {
+    .dif_single{
+     margin-left: 620px;
+     width: 40vw;
+     height: 15vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 210vh;
+    }
+    header{
+     height: 25vh;
+     width: 70vh;
+    }
+ 
+     iframe{
+     margin-left: 90px;
+     margin-top: 800px;
+ 
+     }
+     .dif_singles{
+         margin-left: -270px;
+         margin-top: 700px;
+         width: 40vw;
+         height: 36vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 100px;
+       } 
+ }
+ 
+
+ @media screen and (max-width:580px) {
+    .dif_single{
+     margin-left: 530px;
+     width: 50vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 270vh;
+    }
+    header{
+     height: 35vh;
+     width: 76vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 800px;
+ 
+     }
+     .dif_singles{
+         margin-left: -450px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 40vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+ }
+
+@media screen and (max-width:440px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 90vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 230vh;
+    }
+    header{
+     height: 30vh;
+     width: 47vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1000px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 40vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+ }
+ 
+
+@media screen and (max-width:420px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 90vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 270vh;
+    }
+    header{
+     height: 30vh;
+     width: 45vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1000px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 40vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+ @media screen and (max-width:416px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 90vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 270vh;
+    }
+    header{
+     height: 30vh;
+     width: 45vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1000px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 40vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+ @media screen and (max-width:413px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 90vw;
+     height: 20vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 270vh;
+     width: 100vw;
+    }
+    header{
+     height: 30vh;
+     width: 45vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1000px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 40vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+ 
+
+ @media screen and (max-width:395px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 100vw;
+     height: 30vh;
+    }
+ 
+    .diferenciais{
+     width: 200vw;
+     height: 50vh;
+    }
+ 
+    section.main{
+     height: 330vh;
+    }
+    header{
+     height: 40vh;
+     width: 58vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1100px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 50vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+ }
+ 
+
+
+
+
+
+
+@media screen and (max-width:370px) {
+   .dif_single{
+    margin-left: 100px;
+    width: 90vw;
+    height: 30vh;
+   }
+
+   .diferenciais{
+    width: 100vw;
+   }
+
+   section.main{
+    height: 350vh;
+   }
+   header{
+    height: 40vh;
+    width: 56vh;
+   }
+
+    iframe{
+    margin-left: 10px;
+    margin-top: 1200px;
+
+    }
+    .dif_singles{
+        margin-left: -820px;
+        margin-top: 800px;
+        width: 80vw;
+        height: 50vh;
+    }
+
+    footer{
+        height:20vh
+    }
+
+   .sprova button{
+
+    width: 40vw;
+    height: 10vh;
+    margin-top: 200px;
+   } 
+}
+
+@media screen and (max-width:365px) {
+    .dif_single{
+     margin-left: 100px;
+     width: 90vw;
+     height: 30vh;
+    }
+ 
+    .diferenciais{
+     width: 100vw;
+    }
+ 
+    section.main{
+     height: 300vh;
+    }
+    header{
+     height: 40vh;
+     width: 49vh;
+    }
+ 
+     iframe{
+     margin-left: 10px;
+     margin-top: 1200px;
+ 
+     }
+     .dif_singles{
+         margin-left: -820px;
+         margin-top: 800px;
+         width: 80vw;
+         height: 50vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+ 
+    .sprova button{
+ 
+     width: 40vw;
+     height: 10vh;
+     margin-top: 90px;
+    } 
+ }
+
+ @media screen and (max-width:300px) {
+    .dif_single{
+     margin-left: 450px;
+     width: 100vw;
+     height: 30vh;
+    }
+ 
+    .diferenciais{
+     width: 260vw;
+     height: 30vh;
+    }
+ 
+    section.main{
+     height: 350vh;
+    }
+    header{
+     height: 40vh;
+     width: 43vh;
+    }
+ 
+     iframe{
+     margin-left: -20px;
+     margin-top: 1300px;
+ 
+     }
+     .dif_singles{
+         margin-left: -470px;
+         margin-top: 700px;
+         width: 80vw;
+         height: 70vh;
+     }
+ 
+     footer{
+         height:20vh
+     }
+
+     .sprova button{
+ 
+        width: 40vw;
+        height: 10vh;
+        margin-top: 200px;
+       } 
+ }
+
+ footer{
+    background: #fff;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 1px solid #000;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: -100%;
+    box-shadow: 0px 0px 10px 10px #aaaaaa;
+    }
+    
+    .coiso{
+    text-align: center;
+    padding: 50px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    
